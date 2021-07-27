@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/suresh/GpayApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "map": [
+                {
+                    "source": "/Users/suresh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/87392db7b315aa52da219550842162dc/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "/Users/suresh/.gradle/caches/transforms-1/files-1.1/play-services-wallet-16.0.1.aar/4502a521b57c8a2798b7231cfce8d073/res/values-en-rAU/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "204",
+                        "endColumns": "99",
+                        "endOffsets": "303"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "156",
+                        "endColumns": "103",
+                        "endOffsets": "255"
+                    }
+                }
+            ]
+        }
+    ]
+}
