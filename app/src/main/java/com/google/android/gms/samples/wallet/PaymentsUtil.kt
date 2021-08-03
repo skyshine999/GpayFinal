@@ -182,7 +182,7 @@ object PaymentsUtil {
      */
     private val merchantInfo: JSONObject
         @Throws(JSONException::class)
-        get() = JSONObject().put("merchantName", "Example Merchant")
+        get() = JSONObject().put("merchantName", "MagTek")
 
     /**
      * Creates an instance of [PaymentsClient] for use in an [Activity] using the
