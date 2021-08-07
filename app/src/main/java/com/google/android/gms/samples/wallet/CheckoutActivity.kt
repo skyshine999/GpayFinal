@@ -135,6 +135,7 @@ class CheckoutActivity : Activity() {
             Log.e("RequestPayment", "Can't fetch payment data request")
             return
         }
+        Log.e("gpay",paymentDataRequestJson.toString())
         val request = PaymentDataRequest.fromJson(paymentDataRequestJson.toString())
 
         // Since loadPaymentData may show the UI asking the user to select a payment method, we use
@@ -164,6 +165,7 @@ class CheckoutActivity : Activity() {
                         data?.let { intent ->
                             PaymentData.getFromIntent(intent)?.let(::handlePaymentSuccess)
                         }
+
                     Activity.RESULT_CANCELED -> {
                         // Nothing to do here normally - the user simply cancelled without selecting a
                         // payment method.
@@ -198,7 +200,7 @@ class CheckoutActivity : Activity() {
 
             // If the gateway is set to "example", no payment information is returned - instead, the
             // token will only consist of "examplePaymentMethodToken".
-            print(paymentMethodData)
+            Log.e("gpay",paymentMethodData.toString())
             if (paymentMethodData
                             .getJSONObject("tokenizationData")
                             .getString("type") == "PAYMENT_GATEWAY" && paymentMethodData
